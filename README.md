@@ -1,22 +1,22 @@
 # Super Mario Bros
 
-Recriação em progresso das mecânicas clássicas de Super Mario Bros, feita na engine [Godot 4.4](https://godotengine.org/). O projeto ainda está no início: há um personagem jogável com movimentação e pulo, e dois tipos de inimigo (Goomba e Koopa) com lógica básica de patrulha e morte ao serem pisados, além dos sprites e assets do jogo original importados no projeto.
+A work-in-progress recreation of the classic Super Mario Bros mechanics, made in the [Godot 4.4](https://godotengine.org/) engine. The project is still in its early stages: there is a playable character with movement and jumping, and two enemy types (Goomba and Koopa) with basic patrol logic and dying when stomped on, plus the original game's sprites and assets imported into the project.
 
-## Tecnologias
+## Technologies
 
 - Godot Engine 4.4 (GDScript)
-- Sprites 2D animados (`AnimatedSprite2D`) e física de `CharacterBody2D`/`Area2D`
+- Animated 2D sprites (`AnimatedSprite2D`) and `CharacterBody2D`/`Area2D` physics
 
-## Estrutura
+## Structure
 
-- `project.godot` — configuração do projeto (input map, layers de colisão, cena principal)
-- `player.gd` / `player.tscn` — movimentação, pulo e animações do Mario (modos pequeno/grande/atirando)
-- `Cenas/enemy.gd`, `Cenas/goomba.gd`, `Cenas/goomba.tscn` — base de inimigos e o Goomba
-- `koopa.gd` / `koopa.tscn` — Koopa Troopa, com comportamento de esconder-se na casca ao ser pisado
-- `Assets Super Mario Bros/` — sprites e fonte usados no jogo
-- `Resources/CollisionShapes/` — formas de colisão reutilizadas pelos inimigos
-- `main.tscn` — cena principal do projeto
+- `project.godot` — project configuration (input map, collision layers, main scene)
+- `player.gd` / `player.tscn` — Mario's movement, jumping and animations (small/big/fire modes)
+- `Cenas/enemy.gd`, `Cenas/goomba.gd`, `Cenas/goomba.tscn` — enemy base and the Goomba
+- `koopa.gd` / `koopa.tscn` — Koopa Troopa, which hides in its shell when stomped on
+- `Assets Super Mario Bros/` — sprites and font used in the game
+- `Resources/CollisionShapes/` — collision shapes reused by the enemies
+- `main.tscn` — the project's main scene
 
-## Como rodar
+## How to run
 
-Abra a pasta do repositório no Godot Engine 4.4 (importando `project.godot`) e rode a cena principal pelo editor.
+Open the repository folder in Godot Engine 4.4 (importing `project.godot`) and run the main scene from the editor.
